@@ -1,0 +1,19 @@
+image: python:3.12
+
+variables:
+  PIP_CACHE_DIR: "$CI_PROJECT_DIR/.cache/pip"
+
+cache:
+  paths:
+    - .cache/pip
+    - venv/
+
+before_script:
+  - python -m venv venv
+  - source venv/bin/activate
+  - apt-get update && apt-get install -y libfluidsynth-dev libopencv-dev
+  - pip install -r requirements.txt
+
+test:
+  script:
+    - pytest

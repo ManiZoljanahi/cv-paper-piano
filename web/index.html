@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Paper Piano</title>
+    <!-- Links style.css. -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <!-- Contains the logo, the Status Card (Red/Green dot), and version info. -->
+        <div class="sidebar">
+            <div class="logo-area">
+                <h2>CV Paper Piano</h2>
+            </div>
+
+            <div class="status-card">
+                <div id="status-dot" class="dot red"></div>
+                <span id="status-text">Initializing...</span>
+            </div>
+
+            <div class="footer">
+                <small>v1.0.0</small>
+            </div>
+        </div>
+
+        <div class="main-view">
+            <!-- Contains an <img> tag (#video-feed). This is where the Python OpenCV frames will be injected. -->
+            <div class="camera-frame">
+                <img id="video-feed" src="" alt="Waiting for Camera..." />
+            </div>
+
+            <div class="dashboard">
+                <!-- Large text showing the current note (#note-display). -->
+                <div class="panel note-panel">
+                    <small>CURRENT NOTE</small>
+                    <h1 id="note-display">--</h1>
+                    <p id="full-note-name">Waiting...</p>
+                </div>
+
+                <!-- A scrolling horizontal list (#history-list) of past notes. -->
+                <div class="panel history-panel">
+                    <small>HISTORY</small>
+                    <div id="history-list" class="history-grid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Loads script.js. -->
+    <script src="script.js"></script>
+</body>
+
+</html>

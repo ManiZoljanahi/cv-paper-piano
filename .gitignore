@@ -1,0 +1,85 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[codz]
+*$py.class
+
+# C extensions
+*.so
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+# Pyre type checker
+.pyre/
+# pytype static type analyzer
+.pytype/
+
+# Visual Studio Code / VS Code
+.vscode/
+# Pycharm
+.idea/
+# Jupyter Notebook
+.ipynb_checkpoints
+# Spyder
+.spyderproject
+.spyproject
+# Vim
+*.sw[pon]
+# Rope
+.ropeproject
+# Abstra
+.abstra
+# PyInstaller
+*.manifest
+*.spec
+# PyBuilder
+.pybuilder/
+target/
+# IPython
+profile_default/
+ipython_config.py
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# Translations
+*.mo
+*.pot
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Large/Generated Assets
+assets/soundfonts/*.sf2
+assets/soundfonts/*.sf3
+assets/database/*.db
+
+# Generated Outputs
+piano_pages/
+
+# OS Specific
+.DS_Store
+Thumbs.db
